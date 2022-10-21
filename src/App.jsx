@@ -56,13 +56,14 @@ const App = () => {
     setFieldFilter(value);
     let copyData = data.filter(d => {
       if (d.name.includes(value)) return d;
+      return false
     });
     setList(copyData);
   }, [data]);
 
   const onOpenDetail = useCallback((id, name, img) => {
     navigate(`/pokemon/${id}`, { state: { name, img } });
-  }, []);
+  }, [navigate]);
 
   return (
     <div className='container-app'>

@@ -4,7 +4,7 @@ import { getPoke } from './call';
 import { ButtonCustom } from './components/button-custom/ButtonCustom';
 import './PokeDetail.css';
 
-const PokeDetail = (props) => {
+const PokeDetail = () => {
   const location = useLocation();
   const { name, img } = location.state;
   const [data, setData] = useState({});
@@ -16,7 +16,7 @@ const PokeDetail = (props) => {
     getPoke(`https://pokeapi.co/api/v2/move/${id}`).then(res => {
       setData(res);
     }).catch(alert);
-  }, []);
+  }, [id]);
 
 
   return (
