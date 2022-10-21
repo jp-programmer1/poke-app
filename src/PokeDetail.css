@@ -1,0 +1,65 @@
+.container-detail{
+  width: 100%;
+  height: 100vh;
+  padding: 0.5rem;
+  background-image: url('./assets/img/backgroundDetail.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container-detail-item h2{
+  text-transform: capitalize;
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: rgba(229, 129, 129, 0.649);
+}
+.container-detail-item{
+  margin: 5rem auto;
+  width: 30%;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.314);
+}
+
+@media screen and (max-width:768px) {
+    .container-detail-item{
+      width: 80%;
+    }
+}
+
+.details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-detail-poke{
+  width: 30%;
+
+}
+.details p{
+  font-weight: bold;
+  color: rgb(83, 83, 83);
+}
+.badge{
+  background-color: orange;
+  padding: 0.2rem;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  display: block;
+}
+
+.bg-power{
+  background-color: rgba(240, 63, 63, 0.65);
+}
+.bg-accuracy{
+  background-color: rgba(231, 244, 166, 0.96);
+  color: rgb(135, 135, 135);
+}
+.bg-pp{
+  background-color: rgba(15, 15, 225, 0.523);
+}

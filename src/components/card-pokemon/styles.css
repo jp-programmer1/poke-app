@@ -1,0 +1,27 @@
+.item-container-card{
+  padding-bottom: 0.5rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  height: min-content;
+  opacity: 0.9;
+  transition: all .2s ease-in-out;
+}
+
+.img-card{
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  background-color: white;
+}
+.title-card{
+  color: white;
+  font-weight: bold;
+  border-radius: 0px 0 4px 4px;
+  padding-bottom: 0.3rem;
+  background-color: rgba(227, 44, 93, 0.682);
+}
+
+.item-container-card:hover{
+  opacity: 1;
+  cursor: pointer;
+}
