@@ -48,7 +48,7 @@ const App = () => {
           return [...current, ...data.results];
         });
       }
-    }).catch(setError);
+    }).catch(alert);
   }, [urlNext]);
 
   const onSearch = useCallback((e) => {

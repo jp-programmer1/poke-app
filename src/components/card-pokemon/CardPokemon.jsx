@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo } from 'react'
+import React, { useMemo } from 'react'
 import './styles.css';
 
 export const CardPokemon = ({pokemon, onOpenDetail}) => {
@@ -6,7 +6,7 @@ export const CardPokemon = ({pokemon, onOpenDetail}) => {
 
   const getImage = useMemo(() => {
     return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
-  }, [pokemon]);
+  }, [id]);
 
   return (
     <div className="item-container-card" onClick={() => onOpenDetail(id, pokemon.name, getImage)}>
